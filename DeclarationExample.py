@@ -9,3 +9,11 @@ elif x == 1 :
     print('Unico')
 else :
     print('Mais')
+
+
+# for
+palavras = ['gato', 'macaco', 'pneumoultravulcanocaniose']
+for a in palavras :
+    print(a, len(a))
+
+
