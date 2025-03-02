@@ -58,3 +58,14 @@ for n in range(2, 10) :
 # Se a condição for verdadeira, a break acontecerá.
 # Se a condição nunca for verdadeira, a else cláusula fora do loop será executada.
 
+
+# pass
+# while True :
+    # pass   # Ocupado-espera por interrupção do teclado (Ctrl+C)
+
+# Outro lugar pass que pode ser usado é como um espaço reservado para uma função ou corpo condicional quando você está trabalhando em um novo código,
+# permitindo que você continue pensando em um nível mais abstrato.
+# O pass é ignorado silenciosamente:
+
+# def initlog(* args) :
+    #pass
