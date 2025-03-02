@@ -17,3 +17,12 @@ for a in palavras :
     print(a, len(a))
 
 
+# range() Ela gera progressões aritméticas
+for i in range(5) :
+    print(i)
+
+list(range(5, 10))
+
+a = ['Marcos', 'tinha', 'um', 'ponei']
+for i in range(len(a)) :
+    print(i, a [i])
