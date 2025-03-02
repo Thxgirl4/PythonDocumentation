@@ -45,3 +45,16 @@ for num in range(2, 20) :
 
 
 # else in for loop
+for n in range(2, 10) :
+    for x in range(2, n) :
+        if n % x == 0 :
+            print(n, 'é igual a', x, '*', n // x)
+            break
+    else :
+        # o loop falhou em encontrar um fator
+        print(n, 'é um numero primo')
+# Em um forloop, a elsecláusula é executada após o loop terminar sua iteração final,
+# ou seja, se nenhuma interrupção tiver ocorrido.
+# Se a condição for verdadeira, a break acontecerá.
+# Se a condição nunca for verdadeira, a else cláusula fora do loop será executada.
+
