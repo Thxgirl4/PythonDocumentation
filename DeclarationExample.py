@@ -69,3 +69,42 @@ for n in range(2, 10) :
 
 # def initlog(* args) :
     #pass
+
+
+# match
+# Uma match declaração pega uma expressão e compara seu valor a
+# padrões sucessivos dados como um ou mais blocos case.
+# Isso é superficialmente semelhante a uma declaração switch
+
+def http_error(status) :
+    match status :
+        case 400 :
+            return "Solicitação invalida"
+        case 404 :
+            return "Não encontrado"
+        case 418 :
+            return "Sou um bule de chá"
+        case 401 | 403 | 405 :
+            return "Não permitido"
+        case _ :
+            return "Something went wrong with internet"
+#  o “nome da variável” _atua como um curinga
+#  e nunca falha em corresponder
+
+class Ponto :
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+def where_is(Ponto):
+    match Ponto:
+        case Ponto(x=0, y=0):
+            print("Origem")
+        case Ponto(x=0, y=y):
+            print((f"Y={y}"))
+        case Ponto(x=x, y=0):
+            print(f"X={x}")
+        case Ponto():
+            print("Somewhere else")
+        case _:
+            print("Not a point")
+
